@@ -1,0 +1,59 @@
+#footer {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    color: magenta;
+}
+
+#body {
+    background-color: black;
+    color: turquoise;
+    min-height: 100vh;
+}
+
+.streamline {
+    padding-top: 200px;
+    text-align: center;
+    font-size: 75px;
+    font-family: "brush script mt", cursive;
+    text-shadow: 3px 2px white;
+}
+
+.login {
+    text-align: center;
+}
+
+.BAHTUN {
+    font-size: 20px;
+    border-radius: 8px;
+    transition-duration: 0.5s;
+    background-color: turquoise;
+    color: magenta;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.BAHTUN:hover {
+    background-color: magenta;
+    color: turquoise;
+}
+
+.ICANMAKEYOUDIFFERENT {
+    font-size: 20px;
+    transition-duration: 0.5s;
+    background-color: turquoise;
+    color: magenta;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 13px;
+}
+
+.ICANMAKEYOUDIFFERENT:hover {
+    background-color: magenta;
+    color: turquoise;
+}
+
