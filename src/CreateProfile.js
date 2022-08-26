@@ -6,6 +6,7 @@ import {Navigate, useNavigate } from "react-router-dom";
 const CreateProfile = ()=>{
       const [username, setUsername] = useState("");
       const [password, setPassword] = useState("");
+      const [email, setEmail] = useState("");
       const [error, setError] = useState("");
       const navigate = useNavigate();
 
@@ -44,7 +45,7 @@ const CreateProfile = ()=>{
                     <div className="col-5"></div> 
                     <div className="col-2 text-center">
                     <input
-                    placeholder="username"
+                    placeholder="Username"
                     type="text"
                     value={username}
                     onChange={(evt)=>{
@@ -56,14 +57,26 @@ const CreateProfile = ()=>{
                     <div className="col-5"></div> 
                     <div className="col-2 text-center">
                     <input
-                    placeholder="password"
+                    placeholder="Password"
                     type="password"
                     value={password}
                     onChange={(evt)=>{
                         setPassword(evt.target.value);
                     }}
                     /> </div>
-                </div>  
+                </div>
+                <div className="row">
+                    <div className="col-5"></div> 
+                    <div className="col-2 text-center">
+                    <input
+                    placeholder="Email"
+                    type="text"
+                    value={email}
+                    onChange={(evt)=>{
+                        setEmail(evt.target.value);
+                    }}
+                     /> </div>
+                </div>    
                 <div className="row">
                     <div className="col-5"></div>
                     <div className="col-2 text-center">

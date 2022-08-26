@@ -5,6 +5,7 @@ import Login from "./Login";
 import PasswordReset from "./PasswordReset";
 import CreateProfile from "./CreateProfile";
 import Browse from "./Browse";
+import SetPassword from "./SetPassword";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path="/CreateProfile" element={<CreateProfile/>}/>
           <Route path="/Browse" element={<Browse/>}/>
           <Route path="/" element={<Login/>}/>
+          <Route path="/setPassword" element={<SetPassword />} />
         </Routes>
       </BrowserRouter>
       {/* <header className="App-header">

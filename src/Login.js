@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Navigate, useNavigate } from "react-router-dom";
+import { Navigate, useNavigate, useSearchParams } from "react-router-dom";
 import APIUrl from "./APIUrl";
 
 import { Link } from "react-router-dom";
@@ -8,6 +8,10 @@ const Login = ()=>{
       const [password, setPassword] = useState("");
       const [error, setError] = useState("");
       const navigate = useNavigate();
+      const [searchParams] = useSearchParams();
+
+      const isNewUser = searchParams.get("newUser");
+      const hasPasswordBeenReset = searchParams.get("passwordReset");
 
       const login = async (evt) => {
         evt.preventDefault();
