@@ -22,6 +22,7 @@ const CreateProfile = ()=>{
                 body: JSON.stringify({
                     username,
                     password,
+                    email
                 }),
                 credentials: "include",
             });
