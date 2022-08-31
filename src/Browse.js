@@ -15,6 +15,9 @@ const Browse = ()=>{
       console.log(data)
       // setSearchResults(data.)
       //set data results into searchResults in state
+      .then (data => {
+        setSearchResults(data)
+      })
     } catch (err){
       console.error(err)
     }
@@ -40,9 +43,10 @@ const Browse = ()=>{
     </div>
   </nav>
 {/* add map over searchRestlts to show all titles */}
-        arr.map((value, index) =. {
-
-        });
+        arr.map((value, index) = {
+            title: data.title
+            release date: data.release_date
+        } []);
 
     </div> 
 
