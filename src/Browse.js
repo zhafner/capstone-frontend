@@ -43,10 +43,13 @@ const Browse = ()=>{
     </div>
   </nav>
 {/* add map over searchRestlts to show all titles */}
-        arr.map((value, index) = {
-            title: data.title
-            release date: data.release_date
-        } []);
+        {searchResults.map((value, index) => {
+
+          return <div>
+            <h1>{value.title}</h1>
+            <p>Release date: {value.release_date}</p>
+            </div>
+        })}
 
     </div> 
 
