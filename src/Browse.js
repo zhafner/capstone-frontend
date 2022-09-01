@@ -46,7 +46,7 @@ const Browse = ()=>{
     return (
         <div id="body">
 
-    <nav className="navbar navbar-light bg-light" className="SUPPOSEDTOBEBUFFALO">
+    <nav className="navbar navbar-light bg-light SUPPOSEDTOBEBUFFALO">
     <div className="container-fluid">
       <form className="d-flex"
       //add onSubmit function [done]
@@ -77,7 +77,7 @@ const Browse = ()=>{
                           </button>
                       </p>
                       <div className={value.id===expandedMovieID ? "collapse show" : "collapse"} id="collapseExample">
-                        <a href={streamingInfo?.link} target="_blank"><div className="card card-body" className="SUPPOSEDTOBEBUFFALO">
+                        <a href={streamingInfo?.link} target="_blank"><div className="card card-body SUPPOSEDTOBEBUFFALO">
                           {streamingInfo?.buy?.map(service=>{
                             return <li key={service.provider_id}> <img src={`https://image.tmdb.org/t/p/original/${service.logo_path}`}/> {service.provider_name}
                             
