@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 const Login = ()=>{
       const [username, setUsername] = useState("");
       const [password, setPassword] = useState("");
+      const [loggingIn, setLoggingIn] = useState(false);
       const [error, setError] = useState("");
       const navigate = useNavigate();
       const [searchParams] = useSearchParams();
@@ -15,6 +16,7 @@ const Login = ()=>{
 
       const login = async (evt) => {
         evt.preventDefault();
+        setLoggingIn(true)
 
         try {
             const response = await fetch(`${APIUrl}/login`, {
@@ -30,6 +32,7 @@ const Login = ()=>{
             });
             const data = await response.json();
             console.log(data);
+            setLoggingIn(false)
             if (data.error) {
                 setError(data.error);
             }else{
@@ -74,7 +77,8 @@ const Login = ()=>{
                     />
             </div>
             <p style={{ color: "red" }}>{error}</p>
-            <button className="ICANMAKEYOUDIFFERENT">
+            {isLoggingIn && <p>Logging you in. Patience is required.</p>}
+            <button className="ICANMAKEYOUDIFFERENT" disabled={isLoggingIn}>
                 Login
             </button>
             <Link to="/PasswordReset" className="BAHTUN">Forgot Password?</Link>

@@ -4,5 +4,4 @@ if (window.location.href.includes(".herokuapp.com")){
     APIUrl = "https://zhafner-capstone-backend.herokuapp.com";
 }
 
-
 export default APIUrl;
