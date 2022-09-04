@@ -77,8 +77,8 @@ const Login = ()=>{
                     />
             </div>
             <p style={{ color: "red" }}>{error}</p>
-            {isLoggingIn && <p>Logging you in. Patience is required.</p>}
-            <button className="ICANMAKEYOUDIFFERENT" disabled={isLoggingIn}>
+            {loggingIn && <p>Logging you in. Patience is required.</p>}
+            <button className="ICANMAKEYOUDIFFERENT" disabled={loggingIn}>
                 Login
             </button>
             <Link to="/PasswordReset" className="BAHTUN">Forgot Password?</Link>
