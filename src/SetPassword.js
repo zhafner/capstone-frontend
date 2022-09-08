@@ -17,7 +17,7 @@ const SetPassword = () => {
         } else if (!password) {
             alert("Your password can't be empty.");
         } else {
-            const response = await fetch(`${APIUrl}setPassword`, {
+            const response = await fetch(`${APIUrl}/setPassword`, {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
